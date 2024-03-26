@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import NotFoundPage from "./components/NotFoundPage";
 import HomePage from "./components/HomePage";
 import JournalsPage from "./components/JournalsPage";
 import EntriesPage from "./components/EntriesPage";
@@ -10,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+    errorElement: <NotFoundPage />,
   },
   {
     path: "/journals",
