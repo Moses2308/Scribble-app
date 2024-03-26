@@ -1,10 +1,32 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import JournalsPage from "./components/JournalsPage";
+import EntriesPage from "./components/EntriesPage";
+import EntryPage from "./components/EntryPage";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/journals",
+    element: <JournalsPage />,
+  },
+  {
+    path: "/journals/:journalId",
+    element: <EntriesPage />,
+  },
+  {
+    path: "/journals/:journalId/:entryId",
+    element: <EntryPage />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
