@@ -37,17 +37,7 @@ export default function HomePage() {
               Eaque, modi doloribus. Eum earum, libero nulla dignissimos,
               praesentium exercitationem eaque autem eveniet veniam, repellat
               dicta! Possimus, veniam odit. Possimus voluptas adipisci autem
-              aliquam sapiente voluptates? Eos consequuntur, quis vero corrupti
-              ipsum dolores nisi. Impedit blanditiis incidunt dicta ipsum
-              voluptas tenetur reprehenderit, odio voluptate tempore repellat
-              sequi, neque vel? Quas aliquam commodi minima perspiciatis odio
-              beatae fugiat dolore corporis placeat vitae totam ratione
-              blanditiis voluptatem, eum nulla consequuntur voluptas ut esse
-              laborum excepturi, ipsum provident, aspernatur nisi velit? Error!
-              Dignissimos, dolorum qui animi molestiae at quis aperiam quisquam
-              quae nulla in. Cumque tempora fugit unde nostrum veniam, optio
-              quod illum quis eum exercitationem ab. Ullam similique consectetur
-              beatae nesciunt.
+              aliquam sapiente voluptates?
             </p>
           </Col>
         </Row>
