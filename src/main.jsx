@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./stylesheets/style.css";
 
-import NotFoundPage from "./components/NotFoundPage";
-import HomePage from "./components/HomePage";
-import JournalsPage from "./components/JournalsPage";
-import EntriesPage from "./components/EntriesPage";
-import EntryPage from "./components/EntryPage";
+import NotFoundPage from "./componentPages/NotFoundPage";
+import HomePage from "./componentPages/HomePage";
+import JournalsPage from "./componentPages/JournalsPage";
+import EntriesPage from "./componentPages/EntriesPage";
+import EntryPage from "./componentPages/EntryPage";
 
 const router = createBrowserRouter([
   {
