@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 
-export default function NewJournalForm() {
+export default function NewJournalForm({ updateJournals }) {
   async function handleSubmit(event) {
     event.preventDefault();
     const authorName = event.target.elements[0].value;
@@ -12,8 +12,9 @@ export default function NewJournalForm() {
     if (authorName === false || journalName === false) {
       return;
     }
-    Requester.postJounral(new Journal(authorName, journalName));
+    await Requester.postJounral(new Journal(authorName, journalName));
     event.target.reset();
+    updateJournals(await Requester.getJournals());
   }
 
   return (

@@ -1,22 +1,18 @@
 {
   "journals": [
     {
-      "id": "a763",
+      "id": "493d",
       "author": "Moses Ventura",
-      "name": "Physics Notes",
-      "entries": []
+      "name": "Physics",
+      "entries": [],
+      "imgUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "id": "3f76",
-      "author": "Abraham Ventura",
-      "name": "Mechanic's Notes",
-      "entries": []
-    },
-    {
-      "id": "9a39",
-      "author": "Moses Ventura",
-      "name": "Odin",
-      "entries": []
+      "id": "4797",
+      "author": "Moses ventura",
+      "name": "English 101",
+      "entries": [],
+      "imgUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }

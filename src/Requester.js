@@ -9,4 +9,16 @@ export default class Requester {
     };
     const reponse = await fetch("http://localhost:5500/journals", fetchOptions);
   }
+
+  static async getJournals() {
+    const response = await fetch("http://localhost:5500/journals");
+    const data = await response.json();
+    return data;
+  }
+  static async deleteJournal(journalId) {
+    const fetchOptions = {
+      method: "DELETE",
+    };
+    await fetch(`http://localhost:5500/journals/${journalId}`, fetchOptions);
+  }
 }
