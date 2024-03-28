@@ -1,7 +1,6 @@
 export default class Entry {
-  constructor(title, date, content) {
+  constructor(title) {
     this.title = title;
-    this.date = date;
-    this.content = content;
+    this.textContent = "";
   }
 }
