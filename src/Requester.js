@@ -15,6 +15,24 @@ export default class Requester {
     const data = await response.json();
     return data;
   }
+
+  static async getJournalbyId(journalId) {
+    const response = await fetch(`http://localhost:5500/journals/${journalId}`);
+    const data = await response.json();
+    return data;
+  }
+
+  static async patchJournal(dataObject, journalId) {
+    const fetchOptions = {
+      method: "PATCH",
+      header: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataObject),
+    };
+    await fetch(`http://localhost:5500/journals/${journalId}`, fetchOptions);
+  }
+
   static async deleteJournal(journalId) {
     const fetchOptions = {
       method: "DELETE",

@@ -22,14 +22,15 @@ export default function NewJournalForm({ updateJournals }) {
       <Form className="px-5 mx-5">
         <Form.Group controlId="formBasicText">
           <Form.Label>Journal Author:</Form.Label>
-          <Form.Control type="text" placeholder="Your Name Here" />
+          <Form.Control required type="text" placeholder="Your Name Here" />
           <Form.Text className="text-muted">
             An amazing book written by your's truly!
           </Form.Text>
         </Form.Group>
+
         <Form.Group controlId="formBasicText" className="mt-3">
           <Form.Label>Journal Title</Form.Label>
-          <Form.Control type="text" placeholder="Book Title Here" />
+          <Form.Control required type="text" placeholder="Book Title Here" />
           <Form.Text className="text-muted">
             An amazing book needs an amazing title!
           </Form.Text>

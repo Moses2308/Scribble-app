@@ -26,7 +26,7 @@ export default function JournalsPage() {
         <h1>Journals Page</h1>
       </Container>
       <NewJournalForm updateJournals={setJournals} />
-      <Container className="mt-5">
+      <Container className="my-5">
         <Row className="justify-content-center">
           {journals.map((journal) => {
             return (
