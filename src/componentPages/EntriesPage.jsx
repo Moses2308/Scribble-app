@@ -1,6 +1,7 @@
 import PageNavBar from "../components/PageNavBar";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
@@ -40,7 +41,7 @@ export default function EntriesPage() {
     <>
       <PageNavBar />
       <Container className="text-center mt-5">
-        <h1>{currJournal.entries[0].title} : Entries Page</h1>
+        <h1>{currJournal.name} : Entries Page</h1>
       </Container>
 
       <NewEntryForm {...{ currJournal, setCurrJournal }} />
@@ -54,7 +55,14 @@ export default function EntriesPage() {
             >
               <Card.Body className="mx-auto text-center">
                 <Card.Title>{entry.title}</Card.Title>
-                <Button>Open</Button>
+                <Button>
+                  <Link
+                    to={`/journals/${journalId}/${index}`}
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    Open
+                  </Link>
+                </Button>
                 <Button
                   variant="danger"
                   onClick={async () => {
