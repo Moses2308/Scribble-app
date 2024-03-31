@@ -20,6 +20,18 @@
       "name": "Testing Entries",
       "entries": [],
       "imgUrl": "https://images.unsplash.com/photo-1553451166-232112bda6f6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6b20",
+      "author": "Moses Ventura",
+      "name": "Demo Journal",
+      "entries": [
+        {
+          "title": "First Entry!",
+          "textContent": "This is the first entry of this journal!"
+        }
+      ],
+      "imgUrl": "https://images.unsplash.com/photo-1550537687-c91072c4792d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }
